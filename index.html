@@ -59,10 +59,11 @@
           const value = Number(document.getElementById('input').value)
           store.dispatch({ type: 'WITHDRAW', amount: value })
         })
-
-      document.getElementById('deposit')
+        
+        document.getElementById('deposit')
         .addEventListener('click', function () {
-          store.dispatch({ type: 'DECREMENT', amount })
+          const value = Number(document.getElementById('input').value)
+          store.dispatch({ type: 'DECREMENT', amount: value })
         })
     </script>
   </body>
